@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const adminAPI = axios.create({
-    baseURL: "http://localhost:4444/admin",
+    baseURL: "https://breadbill-api.onrender.com/admin",
     headers: {
         'Content-Type': 'application/json',
         'authToken': JSON.parse(localStorage.getItem('breadBilling'))?.token

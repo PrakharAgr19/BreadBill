@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const cashierAPI = axios.create({
-    baseURL: "http://localhost:4444/cashier",
+    baseURL: "https://breadbill-api.onrender.com/cashier",
     headers: {
         'Content-Type': 'application/json',
         'authToken': JSON.parse(localStorage.getItem('breadBilling'))?.token
