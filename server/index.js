@@ -10,7 +10,10 @@ import cashierRoutes from "./Routes/cashierRoutes.js"
 dotenv.config();
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin : process.env.CORS_ORIGIN,
+    credentials: true
+}));
 app.use(bodyParser.json({ limit: "60mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "60mb", extended: true }));
 
