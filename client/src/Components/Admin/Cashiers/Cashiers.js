@@ -14,7 +14,7 @@ function Cashiers({ theme }) {
     phone: "",
     birthday: "",
     gender: "Male",
-    joinedAt: new Date().toLocaleDateString(),
+    joinedAt: new Date().toISOString().split('T')[0],
     password: ""
   });
   const navigate = useNavigate();
@@ -41,7 +41,7 @@ function Cashiers({ theme }) {
       gender: "Male",
       birthday: "",
       image: "",
-      joinedAt: new Date().toLocaleDateString(),
+      joinedAt: new Date().toISOString().split('T')[0],
       password: ""
     });
     navigate('/cashiers');

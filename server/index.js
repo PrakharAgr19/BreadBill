@@ -24,5 +24,5 @@ app.use('/cashier', cashierRoutes);
 app.use('/admin', adminRoutes);
 
 app.listen(process.env.PORT, () => {
-    console.log("Server listening on port http://localhost:" + process.env.PORT);
+    console.log("Server listening on port " + process.env.PORT);
 });
